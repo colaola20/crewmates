@@ -7,9 +7,6 @@ function App() {
   return (
     <>
       <div className="main-page">
-        <div className="nav-bar">
-
-        </div>
         <div className="main-context">
           <h1>Main part</h1>
         </div>
