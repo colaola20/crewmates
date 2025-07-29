@@ -1,4 +1,5 @@
 import { Outlet, Link } from "react-router-dom"
+import peeking from '../assets/peeking.7c0ab599.png'
 
 function Layout(){
   return (
@@ -21,6 +22,7 @@ function Layout(){
             </Link>
             </li>
         </ul>
+        <img src={peeking} alt="Peeking crewmate" className="nav-img" />
         </nav>
         <Outlet />
     </div>
