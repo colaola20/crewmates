@@ -10,6 +10,16 @@ function Layout(){
                 Home
             </Link>
             </li>
+            <li className="create-link" key="create-button">
+            <Link style={{color: "white"}} to="/create">
+                Create a Crewmate!
+            </Link>
+            </li>
+            <li className="gallery-link" key="gallery-button">
+            <Link style={{color: "white"}} to="/gallery">
+                Crewmate Gallery
+            </Link>
+            </li>
         </ul>
         </nav>
         <Outlet />
