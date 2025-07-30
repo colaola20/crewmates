@@ -16,7 +16,7 @@ createRoot(document.getElementById('root')).render(
           <Route index element={<App />} />
           <Route path="/create" element={<CreateForm />} />
           <Route path="/gallery" element={<Gallery />} />
-          <Route path="/crewmate/:name" element={<CrewmateDetail />} />
+          <Route path="/crewmate/:name" element={<CrewmateDetails />} />
         </Route>
       </Routes>
     </BrowserRouter>

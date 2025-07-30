@@ -1,0 +1,160 @@
+.crewmate-detail {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.crewmate-detail img {
+  width: 250px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.crewmate-info {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.crewmate-info h2 {
+  color: #2c3e50;
+  margin: 16px 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 12px;
+  background: rgba(100, 108, 255, 0.1);
+  border-left: 4px solid #646cff;
+  border-radius: 8px;
+}
+
+.crewmate-info p {
+  color: #666;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  margin: 20px 0;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.crewmate-actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.crewmate-actions button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.btn-primary {
+  background: linear-gradient(45deg, #646cff, #61dafb);
+  color: white;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(100, 108, 255, 0.3);
+}
+
+.btn-secondary {
+  background: #f8f9fa;
+  color: #2c3e50;
+  border: 2px solid #e9ecef;
+}
+
+.btn-secondary:hover {
+  background: #e9ecef;
+  transform: translateY(-1px);
+}
+
+.crewmate-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.stat-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card h3 {
+  margin: 0 0 8px 0;
+  font-size: 0.9rem;
+  opacity: 0.9;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.stat-card .value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+
+.back-button {
+  margin-bottom: 20px;
+}
+
+.back-button a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: #f8f9fa;
+  color: #2c3e50;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.back-button a:hover {
+  background: #e9ecef;
+  transform: translateX(-4px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .crewmate-detail {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .crewmate-detail img {
+    width: 200px;
+    align-self: center;
+  }
+  
+  .crewmate-info {
+    padding-left: 0;
+  }
+  
+  .crewmate-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .crewmate-actions {
+    justify-content: center;
+  }
+}

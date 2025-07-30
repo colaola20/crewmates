@@ -27,7 +27,7 @@ const Crewmate = (props) => {
                 </span>
             </h3>
             <div className="crewmate-actions">
-                <Link to={`/crewmate/${props.id}`}>
+                <Link to={`/crewmate/${props.name}`}>
                     <button>View Details</button>
                 </Link>
             </div>
