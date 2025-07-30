@@ -1,0 +1,52 @@
+
+.crewmate {
+    border-radius: 12px;
+    padding: 20px;
+    margin: 12px;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-left: 6px solid;
+    background: white;
+}
+
+.crewmate:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.crewmate-red { border-left: 6px solid #ff6b6b; }
+.crewmate-green { border-left: 6px solid #51cf66; }
+.crewmate-blue { border-left: 6px solid #339af0; }
+.crewmate-purple { border-left: 6px solid #9775fa; }
+.crewmate-yellow { border-left: 6px solid #ffd43b; }
+.crewmate-orange { border-left: 6px solid #ff8cc8; }
+.crewmate-pink { border-left: 6px solid #ff6b9d; }
+.crewmate-rainbow { 
+    border-left: 6px solid;
+    border-image: linear-gradient(45deg, red, orange, yellow, green, blue, purple) 1;
+}
+
+.crewmate h3 {
+  margin: 12px 0;
+  color: #2c3e50;
+  font-size: 14px;
+}
+
+.crewmate h3:first-child {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.crewmate button {
+  background: #646cff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-top: 12px;
+}
