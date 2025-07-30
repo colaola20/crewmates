@@ -10,7 +10,7 @@ const Crewmate = (props) => {
             blue: '#339af0',
             purple: '#9775fa',
             yellow: '#ffd43b',
-            orange: '#ff8cc8',
+            orange: '#cf8025ff',
             pink: '#ff6b9d',
             rainbow: 'linear-gradient(45deg, red, orange, yellow, green, blue, purple)'
         };

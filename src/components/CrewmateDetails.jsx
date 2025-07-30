@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import crewmateCard from '../assets/crewmateCard.png'
 import './CrewmateDetails.css'
 
-const CrewmateDetails = () => {
+const CrewmateDetails = (props) => {
     const {name} = useParams();
     const [crewmate, setCrewmate] = useState(null);
     const [loading, setLoading] = useState(true);
@@ -71,7 +71,7 @@ const CrewmateDetails = () => {
                         </p>
                         
                         <div className="crewmate-actions">
-                            <button className="btn-primary">Edit Crewmate</button>
+                            <Link to={`/edit/${encodeURIComponent(crewmate.name)}`}><button className="btn-primary">Edit Crewmate</button></Link>
                             <button className="btn-secondary" onClick={deleteCrewmate}>Delete Crewmate</button>
                         </div>
                     </div>

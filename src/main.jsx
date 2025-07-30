@@ -7,6 +7,7 @@ import Layout from './routes/Layout.jsx'
 import CreateForm from './routes/CreateForm.jsx'
 import Gallery from './routes/Gallery.jsx'
 import CrewmateDetails from './components/CrewmateDetails.jsx'
+import EditCrewmate from './routes/EditCrewmate.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -17,6 +18,7 @@ createRoot(document.getElementById('root')).render(
           <Route path="/create" element={<CreateForm />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/crewmate/:name" element={<CrewmateDetails />} />
+          <Route path="/edit/:name" element={<EditCrewmate />} />
         </Route>
       </Routes>
     </BrowserRouter>
