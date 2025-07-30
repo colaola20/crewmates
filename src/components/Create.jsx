@@ -48,16 +48,17 @@ function Create() {
             <div className="main-context">
                 <h1>Create a New Crewmate</h1>
                 <form onSubmit={createCrewmate}>
-                    <label htmlFor="name">Name:</label> <br />
-                    <input type="text" id="name" name="name" value={form.name} onChange={handleChange} /> <br />
-                    <br />
-
-                    <label htmlFor="speed">Speed (mph):</label> <br />
-                    <input type="text" id="speed" name="speed" value={form.speed} onChange={handleChange} /> <br />
-                    <br />
-
-                    <label>Color:</label> <br />
-                    <div>
+                    <div className="form-field">
+                        <label htmlFor="name">Name:</label> <br />
+                        <input type="text" id="name" name="name" value={form.name} onChange={handleChange} />
+                    </div>
+                    <div className="form-field">
+                        <label htmlFor="speed">Speed (mph):</label> <br />
+                        <input type="text" id="speed" name="speed" value={form.speed} onChange={handleChange} /> 
+                    </div>
+                    <label className="color-section">Color:</label> <br />
+                    <div className="radio-group">
+                    <div className="radio-option">
                         <input
                             type="radio"
                             id="red"
@@ -68,7 +69,7 @@ function Create() {
                         />
                         <label htmlFor="red">Red</label>
                     </div>
-                    <div>
+                    <div className="radio-option">
                         <input
                             type="radio"
                             id="green"
@@ -79,7 +80,7 @@ function Create() {
                         />
                         <label htmlFor="green">Green</label>
                     </div>
-                    <div>
+                    <div className="radio-option">
                         <input
                             type="radio"
                             id="blue"
@@ -90,7 +91,7 @@ function Create() {
                         />
                         <label htmlFor="blue">Blue</label>
                     </div>
-                    <div>
+                    <div className="radio-option">
                         <input
                             type="radio"
                             id="purple"
@@ -101,7 +102,7 @@ function Create() {
                         />
                         <label htmlFor="purple">Purple</label>
                     </div>
-                    <div>
+                    <div className="radio-option">
                         <input
                             type="radio"
                             id="yellow"
@@ -112,7 +113,7 @@ function Create() {
                         />
                         <label htmlFor="yellow">Yellow</label>
                     </div>
-                    <div>
+                    <div className="radio-option">
                         <input
                             type="radio"
                             id="orange"
@@ -123,7 +124,7 @@ function Create() {
                         />
                         <label htmlFor="orange">Orange</label>
                     </div>
-                    <div>
+                    <div className="radio-option">
                         <input
                             type="radio"
                             id="pink"
@@ -134,7 +135,7 @@ function Create() {
                         />
                         <label htmlFor="pink">Pink</label>
                     </div>
-                    <div>
+                    <div className="radio-option">
                         <input
                             type="radio"
                             id="rainbow"
@@ -146,6 +147,7 @@ function Create() {
                         <label htmlFor="rainbow">Rainbow</label>
                     </div>
                     <br />
+                    </div>
                     <button type="submit">Create Crewmate</button>
                 </form>
             </div>
