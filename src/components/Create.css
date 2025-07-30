@@ -1,5 +1,6 @@
 .main-context form {
   max-width: 800px;
+  width: 50%;
   margin: 0 auto;
   padding: 50px;
   background: rgba(255, 255, 255, 0.1);
