@@ -4,6 +4,7 @@ import {BrowserRouter, Route, Routes} from "react-router-dom"
 import './index.css'
 import App from './App.jsx'
 import Layout from './routes/Layout.jsx'
+import CreateForm from './routes/CreateForm.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -11,6 +12,7 @@ createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path="/" element={<Layout />} > 
           <Route index element={<App />} />
+          <Route path="/create" element={<CreateForm />} />
         </Route>
       </Routes>
     </BrowserRouter>
