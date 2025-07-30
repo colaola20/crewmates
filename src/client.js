@@ -1,4 +1,4 @@
-import { createClient } from 'supabase/supabase-js'
+import { createClient } from '@supabase/supabase-js'
 
 const URL = 'https://dipbqyefkqqmzcymlcht.supabase.co'
 const API_KEY = import.meta.env.VITE_APP_API_KEY;
