@@ -31,21 +31,20 @@ const CrewmateDetails = () => {
         fetchCrewmate();
     }, [name]);
 
-    const getColorValue = (color) => {
-        const colorMap = {
-            'red': '#ff6b6b',
-            'blue': '#4ecdc4',
-            'green': '#45b7d1',
-            'purple': '#96ceb4',
-            'yellow': '#ffeaa7',
-            'orange': '#fd79a8'
-        };
-        return colorMap[color?.toLowerCase()] || '#ddd';
-    };
-
     if (loading) return <div className="main-context">Loading...</div>;
     if (error) return <div className="main-context">Error: {error}</div>;
     if (!crewmate) return <div className="main-context">Crewmate not found</div>;
+
+    const deleteCrewmate = async (event) => {
+        event.preventDefault();
+
+        await supabase
+            .from('crewmate')
+            .delete()
+            .eq('name', name)
+
+        window.location="/gallery"
+    }
 
     return (
         <div className="main-page">
@@ -62,7 +61,6 @@ const CrewmateDetails = () => {
                             </div>
                             <div className="stat-card">
                                 <h3>Color</h3>
-                                <div className="color-indicator" style={{backgroundColor: getColorValue(crewmate.color)}}></div>
                                 <p className="value">{crewmate.color}</p>
                             </div>
                         </div>
@@ -74,7 +72,7 @@ const CrewmateDetails = () => {
                         
                         <div className="crewmate-actions">
                             <button className="btn-primary">Edit Crewmate</button>
-                            <button className="btn-secondary">Delete Crewmate</button>
+                            <button className="btn-secondary" onClick={deleteCrewmate}>Delete Crewmate</button>
                         </div>
                     </div>
                 </div>
